@@ -1,0 +1,55 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title>extra</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class=" ion-padding ion-text-center">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-avatar>
+          <ion-img src="/assets/imagenes/anime01 (1).jpg"/>
+        </ion-avatar>
+      </ion-col>
+      <ion-col>
+        <ion-chip color="primary" routerLink="/inicio">
+        <ion-avatar>
+          <ion-img src="/assets/imagenes/anime01 (1).jpg"/>
+        </ion-avatar>
+        <ion-label>GO HOME</ion-label>
+        </ion-chip>
+      </ion-col>
+      <ion-col>
+        <ion-avatar>
+          <ion-img src="/assets/imagenes/anime01 (1).jpg"/>
+        </ion-avatar>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <ion-img [src]="img1"/>
+          </ion-avatar>
+        </ion-col>
+        <ion-col>
+          <ion-avatar>
+            <ion-img [src]="img2"/>
+          </ion-avatar>
+        </ion-col>
+        <ion-col >
+          <ion-avatar >
+            <ion-img [src]="img3"/>
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+  <ion-button expand="block" id="mostrar-action-sheet" color="success" fill="outline" shape="round">
+    FAVORITO
+  </ion-button>
+  <ion-action-sheet trigger="mostrar-action-sheet" header="extra" [buttons]="actionSheetButtons"></ion-action-sheet>
+
+</ion-content>
